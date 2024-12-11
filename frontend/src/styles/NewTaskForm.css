@@ -1,0 +1,56 @@
+.form-canvas {
+    display: flex;
+    flex-direction: column;
+}
+.form-back-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: solid 1px rgb(231, 231, 231);
+    border-radius: 5px;
+    font-size: 16px;
+    gap: 0.3em;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    padding: 0.2em 0.6em;
+}
+.task-field-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+    gap: 0.2em;
+}
+.task-field-div label {
+    font-size: 13px;
+    font-weight: 500;;
+}
+.task-field-div input, .task-field-div select {
+    padding: 0.5em 0.3em;
+    outline: none;
+}
+.short-info-div {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.action-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+    margin-top: 2em;
+}
+.action-btns button {
+    background: rgb(0, 0, 0);
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 0.5em;
+    border: solid 1px rgb(138, 138, 138);
+    border-radius: 5px;
+}

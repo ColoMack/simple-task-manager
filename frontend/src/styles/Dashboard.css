@@ -1,0 +1,154 @@
+.dashboard-canvas {
+    background: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.topbar {
+    border-bottom: solid 1px rgb(136, 136, 136);
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6em;
+    justify-content: space-between;
+}
+.logo-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5em;
+}
+.search-icon {
+    padding: 0;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+.sign-out-btn {
+    background: white;
+    border: solid 1px rgb(111, 111, 111);
+    padding: 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.logo-span {
+    font-size: 28px;
+    font-weight: 600;
+}
+.dashboard-content-box {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.analytics-canvas {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin: 5em 0em;
+    justify-content: center;
+}
+.analytics-box {
+    display: flex;
+    flex: row;
+    background: rgb(230, 230, 230);
+    border-radius: 7px;
+    justify-content: space-between;
+    height: fit-content;
+    width: 80%;
+    padding: 2em 3em;
+    font-size: 23px;
+    font-weight: 500;
+}
+.analytics-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.section-2 {
+    background: rgb(255, 255, 255);
+    padding: 0 6em;
+    display: flex;
+    flex-direction: column;
+
+}
+.heading-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+.heading-tasks {
+    font-size: 35px;
+    font-weight: 700;
+}
+.new-task-btn {
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding: 0.4em 0.6em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-list-div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 8em;
+}
+.ind-task {
+    border: solid 1px rgb(225, 225, 225);
+    border-radius: 7px;
+    padding: 2em 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.ind-task:hover {
+    background-color: rgb(241, 241, 241);
+    border: solid 1px white;
+}
+.ind-task-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ind-heading {
+    font-size: 20px;
+}
+.ind-icon-div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.ind-icon-div button {
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 0px rgb(198, 198, 198);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ind-task-content {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+.ind-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+    font-size: 14px;
+}
+.ind-info span:nth-of-type(1) {
+    font-weight: 600;
+}
+.ind-info span:nth-of-type(2) {
+    text-decoration: underline;
+}
+.fetch-error-message {
+    color: red;
+}

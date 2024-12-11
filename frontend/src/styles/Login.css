@@ -1,0 +1,46 @@
+.login-container {
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-box {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.auth-heading {
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+.field-label {
+    font-size: 12px;
+}
+.field-bar {
+    height: 2.5em;
+    outline: none;
+}
+.error {
+    color: red;
+    margin-bottom: 1em;
+}
+.submit-button {
+    background: black;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    height: 2em;
+}
