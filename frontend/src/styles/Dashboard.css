@@ -6,7 +6,8 @@
 }
 .topbar {
     border-bottom: solid 1px rgb(136, 136, 136);
-    height: 5em;
+    min-height: 5em;
+    max-height: 5em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -99,6 +100,7 @@
     padding-right: 8em;
 }
 .ind-task {
+    margin: 0.3em 0;;
     border: solid 1px rgb(225, 225, 225);
     border-radius: 7px;
     padding: 2em 2.5em;

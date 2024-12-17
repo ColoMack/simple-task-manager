@@ -20,9 +20,9 @@ const Topbar = () => {
                 <span className="logo-span">TaskFlow</span>
             </div>
             <div className="logo-btn">
-                <button className="search-icon">
+                {/* <button className="search-icon">
                     <img src="/assets/icons/search_icon.svg" alt=""/>
-                </button>
+                </button> */}
                 <button onClick={handleLogout} className="sign-out-btn">Log out</button>
             </div>
         </div>

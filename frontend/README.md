@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# TaskFlow - Simple Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+TaskFlow is a full stack task management application designed for efficient task management. It is containerized using docker.
 
-## Available Scripts
+## Features
+- User Registration and Login
+- Create, View, Edit, and Delete Tasks
+- Simple task Analytics Dashboard
+- Secure Authentication with JWT
 
-In the project directory, you can run:
+## Technologies Used
+### Frontend:
+- React.js
+- Axios
+- CSS for styling
 
-### `npm start`
+### Backend:
+- Node.js
+- Express.js
+- SQLite for the database
+- JWT for authentication
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Deployment:
+- Docker
+- Docker Compose
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
+## Installation and Setup
 
-### `npm test`
+### Prerequisites
+- Node.js (v16+)
+- Docker and Docker Compose
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ColoMack/simple-task-manager/tree/master
 
-### `npm run build`
+2. cd simple-task-manager
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. docker-compose up --build
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Access the app:
+   Frontend: http://localhost:3000
+   Backend: http://localhost:5000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Usage Instructions
+    1. Sign up for a new account or log in with existing credentials.
+    2. Create tasks by clicking the "New Task" button on the dashboard.
+    3. View all tasks in the task list.
+    4. Edit or delete tasks using the respective buttons.
+    5. View detailed task analytics on the dashboard.
 
-### `npm run eject`
+## Environment Variables
+Create a `.env` file in the `backend` folder with the following variables:
+    JWT_SECRET=your_jwt_secret
+    PORT=5000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Known Issues
+- App is not design responsive.
+- Ensure Docker containers are restarted after any code changes.
