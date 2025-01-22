@@ -40,6 +40,10 @@ const Signup = () => {
                 password: formData.password,
             });
 
+            // Save token in the localstorage
+            const token = response.data.token;
+            localStorage.setItem("token", token);
+
             setSuccess("Account created successfully.");
             setError("");
 

@@ -21,8 +21,7 @@ const Login = () => {
 
             // save the jwt token to the local storage
             localStorage.setItem("token", response.data.token);
-            console.log("Token stored: ", response.data.token);
-
+            
             // redirect user to dashboard
             window.location.href = "/dashboard";
 

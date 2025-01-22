@@ -124,7 +124,7 @@ const MoreInfo = () => {
                             <span>Your tasks.</span>
                         </div>
                         <div className="new-task-div">
-                            <button onClick={() => setIsEditModalOpen(true)} to={`/tasks/${task.id}/edit`} className="new-task-btn">Edit Task</button>
+                            <button onClick={() => setIsEditModalOpen(true)} className="new-task-btn">Edit Task</button>
                         </div>
                     </div>
                     <div className="back-btn-div mb-3">

@@ -7,9 +7,8 @@ services:
       - "5000:5000" # map port 5000 on host to container
     env_file:
       - ./backend/.env # Loads environment variables for the backend
-    volumes:
-      - ./backend:/app  
-      - ./backend/database.sqlite:/app/database.sqlite # Maps SQLite database
+    volumes:  
+      - ./backend/database.sqlite:/usr/src/app/database.sqlite # Maps SQLite database
     environment:
       - NODE_ENV=production
       - JWT_SECRET=your_jwt_secret

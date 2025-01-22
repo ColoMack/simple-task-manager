@@ -6,6 +6,7 @@ exports.signup = async (req, res) => {
     const { email, password } = req.body;
 
     try {
+
         const existingUser = await User.findOne({ where: { email } });
         if (existingUser) {
             return res.status(400).json({ message: 'User already exists' });
@@ -18,7 +19,20 @@ exports.signup = async (req, res) => {
         // create new user
         const user = await User.create({ email, password: hashedPassword });
 
-        res.status(201).json({ message: 'New user created successfully', userId: user.id });
+        // Generate JWT token
+        const token = jwt.sign(
+            { id: user.id },
+            process.env.JWT_SECRET,
+            { expiresIn: '1d' }
+        );
+
+        // return token and user info
+        res.status(201).json({ 
+            message: 'New user created successfully',
+            token,
+            userId: user.id 
+        });
+
     } catch (error) {
         console.error('Error signing up user');
         res.status(500).json({ message: 'Server error' });
@@ -43,6 +57,9 @@ exports.login = async (req, res) => {
             process.env.JWT_SECRET,
             { expiresIn: '1d' }
         );
+
+        
+
         res.json({ token });
 
     } catch (error) {

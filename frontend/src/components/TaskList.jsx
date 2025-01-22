@@ -19,7 +19,7 @@ const TaskList = ({
     // for editing a task
     const [isEditModalOpen, setIsEditModalOpen] = useState(false);
     const [currentTask, setCurrentTask] = useState(null);
-    const navigate = useNavigate;
+    const navigate = useNavigate();
 
     const handleEditSubmit = (updatedTask) => {
         // task update logic
@@ -43,12 +43,15 @@ const TaskList = ({
 
                 // update state to remove the deleted task
                 onTaskDeleted(id);
-                navigate("/dashboard");
+                // navigate("/dashboard");
+
+                if (window.location.pathname === `/tasks/${id}`) {
+                    navigate("/dashboard");
+                }
 
             } catch (error) {
                 
                 console.error("Error deleting task: ", error.response?.data || error.message);
-                fetchError("Failed to delete the task.");
 
             }
         }
